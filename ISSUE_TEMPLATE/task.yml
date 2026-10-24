@@ -1,0 +1,28 @@
+name: 待辦
+description: 一件具體要做的事
+labels: ["enhancement"]
+body:
+  - type: textarea
+    id: summary
+    attributes:
+      label: 摘要（誰／什麼事／結論／日期）
+      description: 第一段就寫清楚，用正式名稱，不寫「那個案子」。
+    validations:
+      required: true
+  - type: textarea
+    id: done
+    attributes:
+      label: 做完的樣子（驗收）
+      description: 用使用者看得到的結果描述。
+    validations:
+      required: true
+  - type: input
+    id: due
+    attributes:
+      label: 期限
+      placeholder: 例：2026-10-31，或「不急」
+  - type: textarea
+    id: source
+    attributes:
+      label: 來源與相關
+      description: 相關連結、先前的決定。請勿貼密碼、金鑰或個人資料。

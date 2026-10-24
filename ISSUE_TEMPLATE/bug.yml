@@ -1,0 +1,24 @@
+name: 壞了要修
+description: 某個東西壞了或不正常
+labels: ["bug"]
+body:
+  - type: textarea
+    id: summary
+    attributes:
+      label: 摘要（什麼壞了／影響／何時發現）
+    validations:
+      required: true
+  - type: textarea
+    id: evidence
+    attributes:
+      label: 證據
+      description: 錯誤訊息原文、預期 vs 實際、截圖連結。請勿貼密碼、金鑰或個人資料。
+    validations:
+      required: true
+  - type: dropdown
+    id: urgency
+    attributes:
+      label: 急不急
+      options: [緊急（已停擺）, 要盡快, 不急]
+    validations:
+      required: true

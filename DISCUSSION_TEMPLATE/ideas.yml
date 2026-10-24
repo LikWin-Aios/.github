@@ -1,0 +1,12 @@
+title: "點子："
+body:
+  - type: textarea
+    id: summary
+    attributes:
+      label: 摘要（想做什麼／為什麼）
+    validations:
+      required: true
+  - type: textarea
+    id: related
+    attributes:
+      label: 相關素材與連結

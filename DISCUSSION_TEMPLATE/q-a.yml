@@ -1,0 +1,12 @@
+body:
+  - type: textarea
+    id: question
+    attributes:
+      label: 問題（一次只問一題）
+      description: 寫清楚你要決定或確認什麼；請勿貼密碼、金鑰或個人資料。
+    validations:
+      required: true
+  - type: textarea
+    id: context
+    attributes:
+      label: 背景與選項
